@@ -1,0 +1,4 @@
+digraph reportelineacion{
+rankdir=LR;
+0[label="A\nblack"];
+}

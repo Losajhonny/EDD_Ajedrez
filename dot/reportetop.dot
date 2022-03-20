@@ -1,0 +1,22 @@
+digraph reportetop{
+graph [pad="0.5", nodesep="0.3", ranksep="0.1"];
+0[label="Calificacion	50"];
+1[label="Alex	21"];
+2[label="Axel	12"];
+3[label="Carlos	9"];
+4[label="Fredy	8"];
+5[label="Perez	8"];
+6[label="Florencia	6"];
+7[label="Irene	5"];
+8[label="Katy	4"];
+9[label="Estuardo	3"];
+0->1;
+1->2;
+2->3;
+3->4;
+4->5;
+5->6;
+6->7;
+7->8;
+8->9;
+}

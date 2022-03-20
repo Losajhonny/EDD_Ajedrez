@@ -1,0 +1,7 @@
+<RCC>
+    <qresource prefix="/">
+        <file>resource/3dajedrez.jpg</file>
+        <file>resource/Ajedrez-3D-Android-Foto-3.jpg</file>
+        <file>resource/maxresdefault.jpg</file>
+    </qresource>
+</RCC>

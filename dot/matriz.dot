@@ -1,0 +1,121 @@
+digraph matriz{
+	node[shape=box, style=filled, color=Gray95];
+	edge[color=black]; 
+	rankdir=UD;
+
+	{rank=min;"Matriz";"1";"2";"3";"4";"5";"6";"7";"8";};
+
+	{rank=same;"H";"H1 C\nblack";"H5 D\nblack";"H7 A\nblack";"H8 C\nblack";};
+	{rank=same;"G";"G2 A\nblack";};
+	{rank=same;"F";"F1 T\nblack";"F4 P\nblack";"F6 P\nblack";"F7 P\nblack";};
+	{rank=same;"E";"E2 P\nblack";"E5 P\nblack";};
+	{rank=same;"D";"D1 P\nblack";"D2 P\nwhite";"D3 R\nwhite";"D5 P\nwhite";"D7 R\nwhite";};
+	{rank=same;"C";"C6 P\nwhite";"C8 P\nwhite";};
+	{rank=same;"B";"B1 P\nwhite";"B3 P\nwhite";};
+	{rank=same;"A";"A1 C\nwhite";"A2 A\nwhite";"A3 T\nwhite";"A6 T\nwhite";"A8 C\nwhite";};
+
+	"H"->"H1 C\nblack";
+	"G"->"G2 A\nblack";
+	"F"->"F1 T\nblack";
+	"E"->"E2 P\nblack";
+	"D"->"D1 P\nblack";
+	"C"->"C6 P\nwhite";
+	"B"->"B1 P\nwhite";
+	"A"->"A1 C\nwhite";
+	"1"->"H1 C\nblack";
+	"2"->"G2 A\nblack";
+	"3"->"D3 R\nwhite";
+	"4"->"F4 P\nblack";
+	"5"->"H5 D\nblack";
+	"6"->"F6 P\nblack";
+	"7"->"H7 A\nblack";
+	"8"->"H8 C\nblack";
+
+	"H1 C\nblack"->"H5 D\nblack"
+	"H5 D\nblack"->"H1 C\nblack"
+	"H5 D\nblack"->"H7 A\nblack"
+	"H7 A\nblack"->"H5 D\nblack"
+	"H7 A\nblack"->"H8 C\nblack"
+	"H8 C\nblack"->"H7 A\nblack"
+	"F1 T\nblack"->"F4 P\nblack"
+	"F4 P\nblack"->"F1 T\nblack"
+	"F4 P\nblack"->"F6 P\nblack"
+	"F6 P\nblack"->"F4 P\nblack"
+	"F6 P\nblack"->"F7 P\nblack"
+	"F7 P\nblack"->"F6 P\nblack"
+	"E2 P\nblack"->"E5 P\nblack"
+	"E5 P\nblack"->"E2 P\nblack"
+	"D1 P\nblack"->"D2 P\nwhite"
+	"D2 P\nwhite"->"D1 P\nblack"
+	"D2 P\nwhite"->"D3 R\nwhite"
+	"D3 R\nwhite"->"D2 P\nwhite"
+	"D3 R\nwhite"->"D5 P\nwhite"
+	"D5 P\nwhite"->"D3 R\nwhite"
+	"D5 P\nwhite"->"D7 R\nwhite"
+	"D7 R\nwhite"->"D5 P\nwhite"
+	"C6 P\nwhite"->"C8 P\nwhite"
+	"C8 P\nwhite"->"C6 P\nwhite"
+	"B1 P\nwhite"->"B3 P\nwhite"
+	"B3 P\nwhite"->"B1 P\nwhite"
+	"A1 C\nwhite"->"A2 A\nwhite"
+	"A2 A\nwhite"->"A1 C\nwhite"
+	"A2 A\nwhite"->"A3 T\nwhite"
+	"A3 T\nwhite"->"A2 A\nwhite"
+	"A3 T\nwhite"->"A6 T\nwhite"
+	"A6 T\nwhite"->"A3 T\nwhite"
+	"A6 T\nwhite"->"A8 C\nwhite"
+	"A8 C\nwhite"->"A6 T\nwhite"
+
+	"H1 C\nblack"->"F1 T\nblack"
+	"F1 T\nblack"->"H1 C\nblack"
+	"F1 T\nblack"->"D1 P\nblack"
+	"D1 P\nblack"->"F1 T\nblack"
+	"D1 P\nblack"->"B1 P\nwhite"
+	"B1 P\nwhite"->"D1 P\nblack"
+	"B1 P\nwhite"->"A1 C\nwhite"
+	"A1 C\nwhite"->"B1 P\nwhite"
+	"G2 A\nblack"->"E2 P\nblack"
+	"E2 P\nblack"->"G2 A\nblack"
+	"E2 P\nblack"->"D2 P\nwhite"
+	"D2 P\nwhite"->"E2 P\nblack"
+	"D2 P\nwhite"->"A2 A\nwhite"
+	"A2 A\nwhite"->"D2 P\nwhite"
+	"D3 R\nwhite"->"B3 P\nwhite"
+	"B3 P\nwhite"->"D3 R\nwhite"
+	"B3 P\nwhite"->"A3 T\nwhite"
+	"A3 T\nwhite"->"B3 P\nwhite"
+	"H5 D\nblack"->"E5 P\nblack"
+	"E5 P\nblack"->"H5 D\nblack"
+	"E5 P\nblack"->"D5 P\nwhite"
+	"D5 P\nwhite"->"E5 P\nblack"
+	"F6 P\nblack"->"C6 P\nwhite"
+	"C6 P\nwhite"->"F6 P\nblack"
+	"C6 P\nwhite"->"A6 T\nwhite"
+	"A6 T\nwhite"->"C6 P\nwhite"
+	"H7 A\nblack"->"F7 P\nblack"
+	"F7 P\nblack"->"H7 A\nblack"
+	"F7 P\nblack"->"D7 R\nwhite"
+	"D7 R\nwhite"->"F7 P\nblack"
+	"H8 C\nblack"->"C8 P\nwhite"
+	"C8 P\nwhite"->"H8 C\nblack"
+	"C8 P\nwhite"->"A8 C\nwhite"
+	"A8 C\nwhite"->"C8 P\nwhite"
+
+	"Matriz"->"1";
+	"1"->"2";
+	"2"->"3";
+	"3"->"4";
+	"4"->"5";
+	"5"->"6";
+	"6"->"7";
+	"7"->"8";
+
+	"Matriz"->"H"[rankdir=UD];
+	"H"->"G"[rankdir=UD];
+	"G"->"F"[rankdir=UD];
+	"F"->"E"[rankdir=UD];
+	"E"->"D"[rankdir=UD];
+	"D"->"C"[rankdir=UD];
+	"C"->"B"[rankdir=UD];
+	"B"->"A"[rankdir=UD];
+}

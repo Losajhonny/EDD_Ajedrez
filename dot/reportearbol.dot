@@ -1,0 +1,19 @@
+digraph reportearbol{
+Irene->German;
+Irene->Jhonny;
+German->Diego;
+Diego->Alex;
+Diego->Fredy;
+Alex->Carlos;
+Carlos->Brandon;
+Carlos->Calificacion;
+Brandon->Axel;
+Fredy->Estuardo;
+Fredy->Flor;
+Flor->Florencia;
+Jhonny->Maria;
+Maria->Katy;
+Maria->Willian;
+Willian->Rompich;
+Rompich->Perez;
+}
